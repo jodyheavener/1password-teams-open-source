@@ -1,0 +1,124 @@
+name: Application
+description: Apply to the 1Password for Open Source Projects program
+title: 'Application for [team name]'
+labels: ['application']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Apply to the 1Password for Open Source Projects program
+
+        Before you continue, please [review the requirements](https://github.com/1Password/1password-teams-open-source#requirements) to ensure you are eligible.
+
+        Once submitted, a member of the team will review your application as soon as possible. Please keep an eye on the issue in case we need additional information. After approving your account will be granted a non-expiring Teams membership. [Membership details can be found here.](https://github.com/1Password/1password-teams-open-source#membership-details)
+
+        Happy coding! 🧑‍💻
+
+        ---
+
+  - type: input
+    attributes:
+      label: Account URL
+      description: |
+        The full URL for your 1Password Teams account. Don't have an account yet? [Create one first.](https://start.1password.com/signup/?t=B)
+      placeholder: example.1password.com
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Your Project
+
+        Let's see what cool thing you're working on.
+  - type: input
+    attributes:
+      label: Project Name
+      description: The name of your open source project.
+      placeholder: Our Project
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Short Description
+      description: A short description of your project. Try to keep it to 50 words or less.
+      placeholder: Our Project is...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Number of Core Contributors
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Project Website
+      description: |
+        This can be:
+        - The project's official website.
+        - The project's GitHub repo.
+        - The organization's GitHub profile.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Latest Release URL
+  - type: input
+    attributes:
+      label: License Type
+      placeholder: MIT, BSD, MPL, GPL, etc.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: License URL
+      description: A copy of the license terms and conditions for your software. This would typically be in your project repository or another easily-discoverable location.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Project Age Verification
+      description: Project's need to be at least 30 days old in order to be eligible for a free Teams account.
+      options:
+        - label: Yes, this project is at least 30 days old
+
+  - type: markdown
+    attributes:
+      value: |
+        ## About You
+        
+        Tell us a little about yourself!
+  - type: input
+    attributes:
+      label: Name
+      placeholder: Wendy Appleseed
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Email
+      description: This email should be associated with one of the account owners.
+      placeholder: wendyappleseed@1password.com
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Project Role
+      description: Choose an option that best describes your role within this project.
+      options:
+        - Founder or Owner
+        - Team Member or Employee
+        - Core Maintainer
+        - Organizer or Admin
+        - Program Manager
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Profile or website
+      description: Where can we find more about you?
+  - type: textarea
+    attributes:
+      label: Additional Comments
+      description: Anything else you'd like to add?
