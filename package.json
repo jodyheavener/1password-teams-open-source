@@ -1,0 +1,16 @@
+{
+  "name": "1password-teams-open-source",
+  "version": "0.0.0",
+  "repository": "1Password/1password-teams-open-source",
+  "author": "1Password <support@agilebits.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "remark-parse": "^10.0.1",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  }
+}
